@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Project Management</title>
+    <meta name="description" content="A dashboard for managing construction projects. Track project progress and manage tasks easily.">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="construction, project management, dashboard">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Project Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <header class="text-center mb-4">
+            <h1 class="display-4">Construction Project Management Dashboard</h1>
+        </header>
+
+        <section id="dashboard" class="mb-5">
+            <h2 class="h3">Project Dashboard</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Progress</th>
+                        </tr>
+                    </thead>
+                    <tbody id="project-table">
+                        <!-- Project rows dynamically generated -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="task-manager">
+            <h2 class="h3">Task Manager</h2>
+            <form id="task-form" class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label for="task-name" class="visually-hidden">Task Name</label>
+                    <input type="text" id="task-name" class="form-control" placeholder="Task Name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="task-date" class="visually-hidden">Task Date</label>
+                    <input type="date" id="task-date" class="form-control" required>
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                </div>
+            </form>
+            <ul id="task-list" class="list-group">
+                <!-- Task items dynamically generated -->
+            </ul>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
