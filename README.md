@@ -22,100 +22,98 @@ This is a web application designed to manage construction projects. It consists 
 ## Setup Instructions
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/project-management-system.git
-   cd project-management-system
+    ```bash
+    git clone https://github.com/yourusername/project-management-system.git
+    cd project-management-system
+    ```
 
-	2.	Navigate to the backend directory and install dependencies:
+2. **Navigate to the backend directory and install dependencies:**
+    ```bash
+    cd backend
+    pip install -r requirements.txt
+    ```
 
-cd backend
-pip install -r requirements.txt
+3. **Set up the frontend:**
+    - Navigate to the frontend directory:
+    ```bash
+    cd ../frontend
+    ```
+    - Install frontend dependencies (if using Node.js):
+    ```bash
+    npm install
+    ```
 
+4. **Configure environment variables:**
+    - Copy `.env.example` to `.env` and fill in the necessary values for your database and application configurations.
 
-	3.	Set up the frontend:
-	•	Navigate to the frontend directory:
+5. **Run the application:**
+    - For the backend:
+    ```bash
+    python app.py
+    ```
+    - For the frontend:
+    ```bash
+    npm start
+    ```
 
-cd ../frontend
-
-	•	Install frontend dependencies (if using Node.js):
-
-npm install
-
-
-	4.	Configure environment variables:
-	•	Copy .env.example to .env and fill in the necessary values for your database and application configurations.
-	5.	Run the application:
-	•	For the backend:
-
-python app.py
-
-	•	For the frontend:
-
-npm start
-
-
-
-Deploying Infrastructure
+## Deploying Infrastructure
 
 To deploy the infrastructure using Terraform, follow these steps:
 
-	1.	Navigate to the terraform directory:
+1. **Navigate to the terraform directory:**
+    ```bash
+    cd ../terraform
+    ```
 
-cd ../terraform
+2. **Initialize Terraform:**
+    ```bash
+    terraform init
+    ```
 
+3. **Apply the Terraform configuration:**
+    ```bash
+    terraform apply
+    ```
 
-	2.	Initialize Terraform:
-
-terraform init
-
-
-	3.	Apply the Terraform configuration:
-
-terraform apply
-
-
-
-CI/CD Pipeline
+## CI/CD Pipeline
 
 The CI/CD pipeline is set up using Jenkins. To configure Jenkins:
 
-	1.	Install Jenkins on your server.
-	2.	Create a new pipeline job in Jenkins.
-	3.	Link the job to your GitHub repository.
-	4.	Use the scripts provided in the jenkins directory for building and deploying the application.
+1. Install Jenkins on your server.
+2. Create a new pipeline job in Jenkins.
+3. Link the job to your GitHub repository.
+4. Use the scripts provided in the `jenkins` directory for building and deploying the application.
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
-	1.	Fork the repository.
-	2.	Create a new branch (git checkout -b feature-branch).
-	3.	Make your changes and commit them (git commit -m "Your message").
-	4.	Push to the branch (git push origin feature-branch).
-	5.	Create a pull request.
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-branch
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m "Your message"
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-branch
+    ```
+5. Create a pull request.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
+## Contact
 
 For any questions or inquiries, please contact:
 
-	•	Tshepo Tau
-	•	Email: tauterrence09@gmail.com
+- **Tshepo Tau**
+- **Email**: tauterrence09@gmail.com
 
-Next Steps
-
-	•	Update GitHub URL: Replace yourusername with your actual GitHub username.
-	•	Fill in Contact Information: Add your name and email in the contact section.
-
-Feel free to copy this entire block into your README.md file!
-
-### Key Updates Made:
-- Corrected indentation and formatting issues.
-- Organized instructions clearly.
-- Added headers for each section for better navigation.
-- Included an explicit license section and contact information.
-
-Make sure to update the GitHub URL with your actual username. This professional-looking `README.md` should help your project stand out on GitHub!
+### Next Steps
+- **Update GitHub URL**: Replace `yourusername` with your actual GitHub username.
+- **Fill in Contact Information**: Add your name and email in the contact section.
