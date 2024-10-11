@@ -1,4 +1,3 @@
-
 # Construction Project Management System
 
 This is a web application designed to manage construction projects. It consists of a frontend and a backend connected to AWS infrastructure. The system aims to streamline project management, enhance collaboration among team members, and improve overall efficiency in the construction process.
@@ -21,6 +20,7 @@ This is a web application designed to manage construction projects. It consists 
 - **Version Control**: Git
 
 ## Setup Instructions
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/project-management-system.git
@@ -48,7 +48,6 @@ npm install
 	•	For the backend:
 
 python app.py
-
 
 	•	For the frontend:
 
@@ -104,11 +103,19 @@ Contact
 For any questions or inquiries, please contact:
 
 	•	Tshepo Tau
-	•	tauterrence09@gmail.com
+	•	Email: tauterrence09@gmail.com
 
-### Next Steps
-- **Update GitHub URL**: Replace `yourusername` with your actual GitHub username.
-- **Fill in Contact Information**: Add your name and email in the contact section.
+Next Steps
 
-Feel free to copy this entire block into your `README.md` file!
+	•	Update GitHub URL: Replace yourusername with your actual GitHub username.
+	•	Fill in Contact Information: Add your name and email in the contact section.
 
+Feel free to copy this entire block into your README.md file!
+
+### Key Updates Made:
+- Corrected indentation and formatting issues.
+- Organized instructions clearly.
+- Added headers for each section for better navigation.
+- Included an explicit license section and contact information.
+
+Make sure to update the GitHub URL with your actual username. This professional-looking `README.md` should help your project stand out on GitHub!
