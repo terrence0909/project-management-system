@@ -3,7 +3,7 @@ output "app_server_ip" {
 }
 
 output "bucket_name" {
-  value = aws_s3_bucket.project_bucket.bucket
+  value = aws_s3_bucket.project_bucket.id  # Updated to use .id
 }
 
 output "db_endpoint" {
@@ -20,5 +20,5 @@ output "db_username" {
 
 output "db_password" {
   value     = var.db_password
-  sensitive = true # Mark as sensitive to avoid showing in console
+  sensitive = true
 }
